@@ -1,0 +1,210 @@
+/* все цвета страницы студия
+.header-back: #ECECEC
+.link-collor: 2196F3
+.back-hero: 2F303A
+.primary-text-color:757575, 100 %
+.white-text-collor:FFFFFF, 100 %
+.h-collor:212121, 100 %
+ .body-back: #E5E5E5
+
+ */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --footer-back: #2f303a;
+  --white-text-collor: #ffffff;
+  --h-collor: #212121;
+  --link-collor: #2196f3;
+  --header-back: #ececec;
+}
+
+.footer-back {
+  background-color: var(--footer-back);
+}
+
+.header-back {
+  background-color: var(--header-back);
+}
+
+.hero {
+  background-color: var(--footer-back);
+  outline: 2px solid green;
+}
+
+.hero-title {
+  color: var(--white-text-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+.site-nav-link {
+  color: var(--h-collor);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--link-collor);
+}
+
+.link {
+  outline: none;
+}
+
+.nav-link {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--link-collor);
+}
+
+.map-address {
+  color: var(--white-text-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.site-nav-link-current {
+  color: var(--link-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.link-blue {
+  color: var(--link-collor);
+}
+
+.link-black {
+  color: #000000;
+}
+
+.linc-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.benefit-item {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.benefit-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--h-collor);
+}
+
+.work-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.name {
+  color: var(--h-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.profession {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-logo-blue {
+  color: var(--link-collor);
+}
+
+.footer-logo-white {
+  color: var(--white-text-collor);
+}
+
+.hero-button {
+  color: var(--white-text-collor);
+}
+
+.main-button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.progects-name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--h-collor);
+}
+
+.progects {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--primary-text-color);
+}
+
+.frame {
+  outline: 2px solid green;
+}
+
+.hero-container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*display: flex
+  flex-wrap: wrap */ ;
