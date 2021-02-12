@@ -11,7 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+/* css-переменные. */
 :root {
   --primary-text-color: #757575;
   --footer-back: #2f303a;
@@ -29,6 +29,10 @@ body {
   background-color: var(--header-back);
 }
 
+.header-back {
+  display: flex;
+}
+/*  */
 .hero {
   background-color: var(--footer-back);
   outline: 2px solid green;
@@ -41,6 +45,27 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  outline: 1px solid green;
+  margin-right: 50px;
+  background-color: hotpink;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0px;
 }
 
 .site-nav-link {
@@ -56,18 +81,19 @@ body {
   outline: none;
 }
 
+.nav-link,
 .nav-link {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-links :hover,
+.nav-links :focus {
   color: var(--link-collor);
 }
 
@@ -120,15 +146,17 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.71;
 }
 
 .benefit-title {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--h-collor);
 }
 
@@ -139,7 +167,7 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
-
+/*  о нашей команде */
 .name {
   color: var(--h-collor);
   font-family: Roboto, sans-serif;
@@ -177,7 +205,7 @@ body {
   font-size: 16px;
   line-height: 26px;
 }
-
+/*  портфолио проекты */
 .progects-name {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -207,4 +235,11 @@ body {
 }
 
 /*display: flex
-  flex-wrap: wrap */ ;
+  flex-wrap: wrap */
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
