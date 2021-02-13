@@ -11,6 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 /* css-переменные. */
 :root {
   --primary-text-color: #757575;
@@ -21,51 +22,39 @@ body {
   --header-back: #ececec;
 }
 
-.footer-back {
-  background-color: var(--footer-back);
-}
-
-.header-back {
-  background-color: var(--header-back);
-}
-
-.header-back {
-  display: flex;
-}
-/*  */
-.hero {
-  background-color: var(--footer-back);
-  outline: 2px solid green;
-}
-
-.hero-title {
-  color: var(--white-text-collor);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.header-nav {
-  display: flex;
-}
-
-.site-nav {
-  display: flex;
-}
-
-.site-nav .item {
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
   outline: 1px solid green;
-  margin-right: 50px;
-  background-color: hotpink;
 }
 
 .site-nav .item:last-child {
   margin-right: 0px;
+}
+
+/*  Хедер сайта */
+.header-back {
+  background-color: var(--header-back);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .item {
+  outline: 1px solid greenyellow;
 }
 
 .site-nav-link {
@@ -83,13 +72,17 @@ body {
 
 .nav-link,
 .nav-link {
-  color: var(--primary-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .nav-links :hover,
@@ -97,13 +90,17 @@ body {
   color: var(--link-collor);
 }
 
-.map-address {
-  color: var(--white-text-collor);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links .item {
+  outline: 1px solid green;
+}
+
+.nav-links .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav-link-current {
@@ -117,6 +114,10 @@ body {
 }
 
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -141,6 +142,25 @@ body {
   line-height: 31px;
 }
 
+/*  Hero сайта Студия*/
+.hero {
+  background-color: var(--footer-back);
+  outline: 2px solid green;
+}
+
+.hero-title {
+  color: var(--white-text-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*  наши преимущества */
 .benefit-item {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -160,6 +180,7 @@ body {
   color: var(--h-collor);
 }
 
+/*  то что мы делаем студия */
 .work-title {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -167,6 +188,7 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
+
 /*  о нашей команде */
 .name {
   color: var(--h-collor);
@@ -186,8 +208,22 @@ body {
   line-height: 19px;
 }
 
+/* Подвал сайта */
+.footer-back {
+  background-color: var(--footer-back);
+}
+
 .footer-logo-blue {
   color: var(--link-collor);
+}
+
+.map-address {
+  color: var(--white-text-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .footer-logo-white {
@@ -205,7 +241,9 @@ body {
   font-size: 16px;
   line-height: 26px;
 }
+
 /*  портфолио проекты */
+
 .progects-name {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -228,6 +266,8 @@ body {
   outline: 2px solid green;
 }
 
+/*  контейнер для стилизации hero
+ */
 .hero-container {
   width: 600px;
   margin-left: auto;
@@ -237,9 +277,4 @@ body {
 /*display: flex
   flex-wrap: wrap */
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 1px solid green;
-}
+/* общий контейнер для стилизации */
