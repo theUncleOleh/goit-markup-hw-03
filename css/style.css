@@ -29,8 +29,20 @@ body {
   outline: 1px solid green;
 }
 
+.link {
+  outline: none;
+}
+
 .site-nav .item:last-child {
   margin-right: 0px;
+}
+
+.link-blue {
+  color: var(--link-collor);
+}
+
+.link-black {
+  color: #000000;
 }
 
 /*  Хедер сайта */
@@ -42,6 +54,18 @@ body {
   display: flex;
   align-items: center;
 }
+
+/*  логотип */
+
+.linc-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+/* навигация по сайту */
 
 .site-nav {
   display: flex;
@@ -66,9 +90,30 @@ body {
   color: var(--link-collor);
 }
 
-.link {
-  outline: none;
+.site-nav-link-current {
+  color: var(--link-collor);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
+
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* навигация мейл и телефон */
 
 .nav-link,
 .nav-link {
@@ -103,61 +148,42 @@ body {
   margin-left: 50px;
 }
 
-.site-nav-link-current {
-  color: var(--link-collor);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-.site-nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-.link-blue {
-  color: var(--link-collor);
-}
-
-.link-black {
-  color: #000000;
-}
-
-.linc-logo {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-}
-
 /*  Hero сайта Студия*/
 .hero {
   background-color: var(--footer-back);
   outline: 2px solid green;
 }
 
+.hero-section {
+  text-align: center;
+}
+
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+
+  outline: 1px solid green;
+  text-align: center;
   color: var(--white-text-collor);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+/* кнопка заказа услуг */
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  background-color: var(--link-collor);
+  color: var(--white-text-collor);
 }
 
 /*  наши преимущества */
@@ -230,10 +256,7 @@ body {
   color: var(--white-text-collor);
 }
 
-.hero-button {
-  color: var(--white-text-collor);
-}
-
+/* кнопки в портфолио */
 .main-button {
   font-family: Roboto, sans-serif;
   font-style: normal;
