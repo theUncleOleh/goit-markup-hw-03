@@ -24,13 +24,21 @@ body {
 
 .container {
   width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid green;
 }
 
 .link {
   outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .site-nav .item:last-child {
@@ -187,12 +195,30 @@ body {
 }
 
 /*  наши преимущества */
+
+.benefit-frame {
+  display: flex;
+  margin-top: 94px;
+}
+
+.benefit-frame {
+  padding-left: 0px;
+}
+
+.benefit-frame {
+  justify-content: space-between;
+}
+
 .benefit-item {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.card {
+  width: 270px;
 }
 
 .benefit-title {
@@ -208,6 +234,8 @@ body {
 
 /*  то что мы делаем студия */
 .work-title {
+  text-align: center;
+  margin-top: 90px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -215,8 +243,61 @@ body {
   line-height: 42px;
 }
 
+.work-item-frame {
+  outline: 1px solid green;
+}
+
+.work-item {
+  display: block;
+}
+
+.work-item {
+  display: flex;
+}
+
+.work-item {
+  justify-content: space-between;
+}
+
+.work-item {
+  margin-top: 0px;
+  margin-bottom: 98px;
+  padding-left: 0px;
+}
+
 /*  о нашей команде */
+
+.team-title {
+  padding-top: 94px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.team-card {
+  display: flex;
+}
+
+.team-card {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.team-card-item {
+  outline: 1px solid #008000;
+}
+
+.team-card-item {
+  margin-right: 30px;
+}
+
+.team-card-item:last-child {
+  margin-right: 0px;
+}
+
 .name {
+  text-align: center;
+  margin-top: 30px;
   color: var(--h-collor);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -226,6 +307,9 @@ body {
 }
 
 .profession {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -237,10 +321,33 @@ body {
 /* Подвал сайта */
 .footer-back {
   background-color: var(--footer-back);
+  margin-top: 94px;
+}
+
+.footer-logo {
+  display: block;
+}
+
+.footer-logo {
+  padding-top: 50px;
+  outline: 1px solid#008000;
 }
 
 .footer-logo-blue {
   color: var(--link-collor);
+}
+
+.adress-link {
+  display: block;
+}
+
+.adress-link {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+.adress {
+  display: block;
 }
 
 .map-address {
@@ -249,11 +356,44 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
+
+  outline: 1px solid #008000;
+}
+
+.map-item {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-logo-white {
   color: var(--white-text-collor);
+}
+
+.footer-nav {
+  display: block;
+  padding-left: 0px;
+}
+
+.footer-nav-link {
+  display: block;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--link-collor);
+}
+
+.footer-nav-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* кнопки в портфолио */
