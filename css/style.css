@@ -422,7 +422,7 @@ img {
 }
 
 /* кнопки в портфолио */
-.main-button {
+.main-button-item {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -430,9 +430,30 @@ img {
   line-height: 26px;
 }
 
+.main-button {
+  display: flex;
+  padding-top: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.main-button-item:hover,
+.main-button-item:focus {
+  color: var(--link-collor);
+}
+
+.main-button {
+  margin-left: 280px;
+}
+
+.main-button-item {
+  margin-right: 8px;
+}
+
 /*  портфолио проекты */
 
-.progects-name {
+.product-name {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -442,12 +463,54 @@ img {
 }
 
 .progects {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.progects-name {
+  width: 370px;
+  outline: 1px solid #008000;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.progects-name * {
+  outline: 1px solid #008000;
+}
+
+.progects-name:nth-child(3n) {
+  margin-right: 0;
+}
+
+.progects-name:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.product {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: var(--primary-text-color);
+}
+
+.product-title {
+  display: block;
+}
+
+.product-name {
+  margin-top: 20px;
+}
+
+.product-name {
+  margin-bottom: 0px;
+}
+
+.product {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .frame {
