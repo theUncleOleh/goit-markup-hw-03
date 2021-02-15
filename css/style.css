@@ -28,7 +28,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid green;
+  /* outline: 1px solid green */
 }
 
 .link {
@@ -86,7 +86,7 @@ img {
 }
 
 .site-nav .item {
-  outline: 1px solid greenyellow;
+  /* outline: 1px solid greenyellow; */
 }
 
 .site-nav-link {
@@ -148,9 +148,9 @@ img {
   margin-left: auto;
 }
 
-.nav-links .item {
+/* .nav-links .item {
   outline: 1px solid green;
-}
+} */
 
 .nav-links .item + .item {
   margin-left: 50px;
@@ -159,7 +159,7 @@ img {
 /*  Hero сайта Студия*/
 .hero {
   background-color: var(--footer-back);
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   min-height: 600px;
 }
 
@@ -172,7 +172,7 @@ img {
   margin-bottom: 30px;
   margin-top: 0px;
 
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   text-align: center;
   color: var(--white-text-collor);
   font-family: Roboto, sans-serif;
@@ -252,7 +252,7 @@ img {
 }
 
 .work-item-frame {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   display: block;
 }
 
@@ -304,7 +304,7 @@ img {
 }
 
 .team-card-item {
-  outline: 1px solid #008000;
+  /* outline: 1px solid #008000; */
 }
 
 .team-card-item {
@@ -353,7 +353,7 @@ img {
 
 .footer-logo {
   padding-top: 50px;
-  outline: 1px solid#008000;
+  /* outline: 1px solid#008000; */
 }
 
 .footer-logo-blue {
@@ -381,7 +381,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
 
-  outline: 1px solid #008000;
+  /* outline: 1px solid #008000; */
 }
 
 .map-item {
@@ -470,14 +470,14 @@ img {
 
 .progects-name {
   width: 370px;
-  outline: 1px solid #008000;
+  /* outline: 1px solid #008000; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.progects-name * {
+/* .progects-name * {
   outline: 1px solid #008000;
-}
+} */
 
 .progects-name:nth-child(3n) {
   margin-right: 0;
@@ -513,9 +513,9 @@ img {
   margin-bottom: 20px;
 }
 
-.frame {
+/* .frame {
   outline: 2px solid green;
-}
+} */
 
 /*  контейнер для стилизации hero
  */
