@@ -21,7 +21,7 @@ body {
   --link-collor: #2196f3;
   --header-back: #ececec;
 }
-
+/* контейнер */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -54,13 +54,11 @@ img {
 }
 
 /*  Хедер сайта */
-.header-back {
-  background-color: var(--header-back);
-}
 
 .header-nav {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 /*  логотип */
@@ -79,26 +77,31 @@ img {
   display: flex;
   align-items: center;
   margin-left: 93px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .site-nav .item + .item {
   margin-left: 50px;
 }
 
-.site-nav .item {
-  /* outline: 1px solid greenyellow; */
-}
+/* .site-nav .item {
+  outline: 1px solid greenyellow;
+} */
 
-.site-nav-link {
+.site-nav .link {
   color: var(--h-collor);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.link:hover,
+.link:focus {
   color: var(--link-collor);
 }
 
-.site-nav-link-current {
+.link-current {
   color: var(--link-collor);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -108,16 +111,12 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+.link {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -128,6 +127,8 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -191,17 +192,18 @@ img {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
-  margin-bottom: 200px;
+
   background-color: var(--link-collor);
   color: var(--white-text-collor);
 }
 
 /*  наши преимущества */
+.benefit {
+  padding-top: 94px;
+}
 
 .benefit-frame {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .benefit-frame {
@@ -241,6 +243,10 @@ img {
 }
 
 /*  то что мы делаем студия */
+.work {
+  padding-top: 94px;
+}
+
 .work-title {
   text-align: center;
   margin-top: 0px;
@@ -286,11 +292,20 @@ img {
 
 /*  о нашей команде */
 
-.team-title {
+.our-team {
   padding-top: 94px;
+}
+
+.team-title {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .team-card {
@@ -338,12 +353,9 @@ img {
   line-height: 19px;
 }
 
-/* Подвал сайта */
+/* Подвал сайта  */
 .footer-back {
-  padding-top: 47px;
-}
-
-.footer-color {
+  padding-top: 6px;
   background-color: var(--footer-back);
 }
 
@@ -352,7 +364,7 @@ img {
 }
 
 .footer-logo {
-  padding-top: 50px;
+  padding-top: 60px;
   /* outline: 1px solid#008000; */
 }
 
@@ -436,15 +448,12 @@ img {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  justify-content: center;
 }
 
 .main-button-item:hover,
 .main-button-item:focus {
   color: var(--link-collor);
-}
-
-.main-button {
-  margin-left: 280px;
 }
 
 .main-button-item {
@@ -500,8 +509,11 @@ img {
   display: block;
 }
 
-.product-name {
-  margin-top: 20px;
+.our-product {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .product-name {
@@ -510,7 +522,6 @@ img {
 
 .product {
   margin-top: 4px;
-  margin-bottom: 20px;
 }
 
 /* .frame {
