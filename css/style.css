@@ -447,6 +447,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .main-button {
@@ -455,9 +457,6 @@ img {
   margin-top: 0px;
   justify-content: center;
   padding-left: 0px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
 }
 
 .main-button-item:hover,
