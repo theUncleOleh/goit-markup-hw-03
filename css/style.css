@@ -167,7 +167,7 @@ img {
   min-height: 600px;
 }
 
-.hero-section {
+.hero {
   text-align: center;
 }
 
@@ -177,7 +177,7 @@ img {
   margin-top: 0px;
 
   /* outline: 1px solid green; */
-  text-align: center;
+
   color: var(--white-text-collor);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -195,6 +195,8 @@ img {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: var(--link-collor);
   color: var(--white-text-collor);
