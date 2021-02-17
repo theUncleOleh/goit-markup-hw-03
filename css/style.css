@@ -54,6 +54,9 @@ img {
 }
 
 /*  Хедер сайта */
+.header-back {
+  border: 1px solid #ececec;
+}
 
 .header-nav {
   display: flex;
@@ -245,6 +248,7 @@ img {
 /*  то что мы делаем студия */
 .work {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-title {
@@ -274,7 +278,6 @@ img {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 47px;
 }
 
 /* 
@@ -294,6 +297,7 @@ img {
 
 .our-team {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -315,7 +319,8 @@ img {
 .team-card {
   margin-left: 0px;
   padding-left: 0px;
-  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .team-card-item {
@@ -444,11 +449,13 @@ img {
 
 .main-button {
   display: flex;
-  padding-top: 94px;
+  margin-bottom: 34px;
   margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
   justify-content: center;
+  padding-left: 0px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .main-button-item:hover,
@@ -461,6 +468,10 @@ img {
 }
 
 /*  портфолио проекты */
+.design-work {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 
 .product-name {
   font-family: Roboto, sans-serif;
@@ -475,6 +486,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .progects-name {
@@ -514,14 +527,17 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .product-name {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .product {
   margin-top: 4px;
+  margin-bottom: 0px;
 }
 
 /* .frame {
